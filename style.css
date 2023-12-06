@@ -4,6 +4,8 @@ body {
             padding: 0;
             background: url("https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg");
             overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         #slider {
             position: fixed;
@@ -128,6 +130,7 @@ body {
         .input-container input {
             flex: 1;
             padding: 8px;
+            background: transparent;
             border: none;
             outline: none;
         }
@@ -317,4 +320,9 @@ button{
     width: 40px;
     border: none;
     background: transparent;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: 1000%; 
+    }
 }
